@@ -1,9 +1,4 @@
-from Data.seen_aliens import alien_database
-
-# Mark them as seen during an encounter
-alien_database["Zenthari"].mark_seen()
-alien_database["Gralnox"].mark_seen()
-alien_database["Skarn"].mark_seen()
+from Data.aliens import alien_database
 
 # View all seen aliens
 print("Seen alien races:")
