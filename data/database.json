@@ -1,0 +1,77 @@
+{
+    "Zenthari": {
+        "race": "Zenthari",
+        "attitude": "friendly",
+        "planet": "Xenith Prime"
+    },
+    "Gralnox": {
+        "race": "Gralnox",
+        "attitude": "hostile",
+        "planet": "Xenith Prime"
+    },
+    "Skarn": {
+        "race": "Skarn",
+        "attitude": "agressive",
+        "planet": "Xenth"
+    },
+    "Limari": {
+        "race": "Limari",
+        "attitude": "friendly",
+        "planet": "Aurelia"
+    },
+    "Quarn": {
+        "race": "Quarn",
+        "attitude": "neutral",
+        "planet": "Aurelia"
+    },
+    "Flareth": {
+        "race": "Flareth",
+        "attitude": "hostile",
+        "planet": "Pyros"
+    },
+    "Ignari": {
+        "race": "Ignari",
+        "attitude": "hostile",
+        "planet": "Xenth"
+    },
+    "Blazion": {
+        "race": "Blazion",
+        "attitude": "hostile",
+        "planet": "Pyros"
+    },
+    "Scorching": {
+        "race": "Scorching",
+        "attitude": "agressive",
+        "planet": "Pyros"
+    },
+    "Emberak": {
+        "race": "Emberak",
+        "attitude": "friendly",
+        "planet": "Pyros"
+    },
+    "Chillix": {
+        "race": "Chillix",
+        "attitude": "friendly",
+        "planet": "Frosk"
+    },
+    "Rimeclaw": {
+        "race": "Rimeclaw",
+        "attitude": "hostile",
+        "planet": "Frosk"
+    },
+    "Velvon": {
+        "race": "Velvon",
+        "attitude": "neutral",
+        "planet": "Zenari"
+    },
+    "Tharnak": {
+        "race": "Tharnak",
+        "attitude": "neutral",
+        "planet": "Zenari"
+    },
+    "Krayt": {
+        "race": "Krayt",
+        "attitude": "hostile",
+        "planet": "Zenari"
+    }
+}

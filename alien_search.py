@@ -1,5 +1,3 @@
-from Data.aliens import alien_database
-
 # View all seen aliens
 def view_all():
     print("Seen alien races:")
