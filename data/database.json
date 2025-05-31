@@ -1,56 +1,80 @@
 {
     "Xenith Prime": {
-        "Gralnox": {
-            "attitude": "hostile"
+        "species": {
+            "Gralnox": {
+                "attitude": "hostile"
+            },
+            "Zenthari": {
+                "attitude": "friendly"
+            }
         },
-        "Zenthari": {
-            "attitude": "friendly"
-        }
+        "size": "large",
+        "temperature": "temperate"
     },
     "Xenth": {
-        "Ignari": {
-            "attitude": "hostile"
+        "species": {
+            "Ignari": {
+                "attitude": "hostile"
+            },
+            "Skarn": {
+                "attitude": "aggressive"
+            }
         },
-        "Skarn": {
-            "attitude": "aggressive"
-        }
+        "size": "tiny",
+        "temperature": "hot"
     },
     "Aurelia": {
-        "Quarn": {
-            "attitude": "neutral"
+        "species": {
+            "Quarn": {
+                "attitude": "neutral"
+            },
+            "Limari": {
+                "attitude": "friendly"
+            }
         },
-        "Limari": {
-            "attitude": "friendly"
-        }
+        "size": "grand",
+        "temperature": "cold"
     },
     "Pyros": {
-        "Emberak": {
-            "attitude": "friendly"
+        "species": {
+            "Emberak": {
+                "attitude": "friendly"
+            },
+            "Schorchin": {
+                "attitude": "aggressive"
+            },
+            "Blazion": {
+                "attitude": "hostile"
+            }
         },
-        "Schorchin": {
-            "attitude": "aggressive"
-        },
-        "Blazion": {
-            "attitude": "hostile"
-        }
+        "size": "small",
+        "temperature": "burning hot"
     },
     "Frosk": {
-        "Rimeclaw": {
-            "attitude": "hostile"
+        "species": {
+            "Rimeclaw": {
+                "attitude": "hostile"
+            },
+            "Chillix": {
+                "attitude": "friendly"
+            }
         },
-        "Chillix": {
-            "attitude": "friendly"
-        }
+        "size": "tiny",
+        "temperature": "frozen"
     },
     "Zenari": {
-        "Krayt": {
-            "attitude": "hostile"
+        "species": {
+            "Krayt": {
+                "attitude": "hostile"
+            },
+            "Velvon": {
+                "attitude": "neutral"
+            },
+            "Tharnak": {
+                "attitude": "neutral"
+            }
         },
-        "Velvon": {
-            "attitude": "neutral"
-        },
-        "Tharnak": {
-            "attitude": "neutral"
-        }
+        "size": "medium",
+        "temperature": "warm"
     }
 }

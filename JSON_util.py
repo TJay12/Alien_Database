@@ -1,5 +1,6 @@
 import json
 
+
 # Read JSON File (Display data info from file)
 def read_json(path):
 

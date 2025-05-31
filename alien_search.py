@@ -79,9 +79,9 @@ def view_all_attitudes():
         print(f" - {attitude}")
     return data, attitudes
 
-# view_all_planets()
+view_all_planets()
 # view_all_races()
 # view_all_attitudes()
-planet_search()
+# planet_search()
 # race_search()
 # attitude_search()
