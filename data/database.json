@@ -1,77 +1,56 @@
 {
-    "Zenthari": {
-        "race": "Zenthari",
-        "attitude": "friendly",
-        "planet": "Xenith Prime"
+    "Xenith Prime": {
+        "Gralnox": {
+            "attitude": "hostile"
+        },
+        "Zenthari": {
+            "attitude": "friendly"
+        }
     },
-    "Gralnox": {
-        "race": "Gralnox",
-        "attitude": "hostile",
-        "planet": "Xenith Prime"
+    "Xenth": {
+        "Ignari": {
+            "attitude": "hostile"
+        },
+        "Skarn": {
+            "attitude": "aggressive"
+        }
     },
-    "Skarn": {
-        "race": "Skarn",
-        "attitude": "agressive",
-        "planet": "Xenth"
+    "Aurelia": {
+        "Quarn": {
+            "attitude": "neutral"
+        },
+        "Limari": {
+            "attitude": "friendly"
+        }
     },
-    "Limari": {
-        "race": "Limari",
-        "attitude": "friendly",
-        "planet": "Aurelia"
+    "Pyros": {
+        "Emberak": {
+            "attitude": "friendly"
+        },
+        "Schorchin": {
+            "attitude": "aggressive"
+        },
+        "Blazion": {
+            "attitude": "hostile"
+        }
     },
-    "Quarn": {
-        "race": "Quarn",
-        "attitude": "neutral",
-        "planet": "Aurelia"
+    "Frosk": {
+        "Rimeclaw": {
+            "attitude": "hostile"
+        },
+        "Chillix": {
+            "attitude": "friendly"
+        }
     },
-    "Flareth": {
-        "race": "Flareth",
-        "attitude": "hostile",
-        "planet": "Pyros"
-    },
-    "Ignari": {
-        "race": "Ignari",
-        "attitude": "hostile",
-        "planet": "Xenth"
-    },
-    "Blazion": {
-        "race": "Blazion",
-        "attitude": "hostile",
-        "planet": "Pyros"
-    },
-    "Scorching": {
-        "race": "Scorching",
-        "attitude": "agressive",
-        "planet": "Pyros"
-    },
-    "Emberak": {
-        "race": "Emberak",
-        "attitude": "friendly",
-        "planet": "Pyros"
-    },
-    "Chillix": {
-        "race": "Chillix",
-        "attitude": "friendly",
-        "planet": "Frosk"
-    },
-    "Rimeclaw": {
-        "race": "Rimeclaw",
-        "attitude": "hostile",
-        "planet": "Frosk"
-    },
-    "Velvon": {
-        "race": "Velvon",
-        "attitude": "neutral",
-        "planet": "Zenari"
-    },
-    "Tharnak": {
-        "race": "Tharnak",
-        "attitude": "neutral",
-        "planet": "Zenari"
-    },
-    "Krayt": {
-        "race": "Krayt",
-        "attitude": "hostile",
-        "planet": "Zenari"
+    "Zenari": {
+        "Krayt": {
+            "attitude": "hostile"
+        },
+        "Velvon": {
+            "attitude": "neutral"
+        },
+        "Tharnak": {
+            "attitude": "neutral"
+        }
     }
 }
