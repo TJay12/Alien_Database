@@ -1,14 +1,14 @@
-import JSON_util
-from JSON_util import read_json
+from assets import JSON_util as j
 from pathlib import Path
-from Classes.Planet import Planet
+from assets.Classes.Planet import Planet
 
 root = Path("data")
 file = Path("database.json")
 path = root / file
 
-def general_info():
-    data = JSON_util.read_json(path)
+
+def general_info(path):
+    data = j.read_json(path)
 
     for planet in data:
         planet_data = data[planet]
@@ -69,7 +69,7 @@ def attitude_search():
 
 # <--- View all Items of a Specific Category --->
 def view_all_planets():
-    data = read_json(path)
+    data = j.read_json(path)
     planets = []
     for planet in data:
         if planet not in planets:
@@ -79,7 +79,7 @@ def view_all_planets():
     return data, planets
 
 def view_all_races():
-    data = read_json(path)
+    data = j.read_json(path)
     races = []
     for planet, race in data.items():
         for race in data[planet]:
@@ -90,7 +90,7 @@ def view_all_races():
     return data, races
 
 def view_all_attitudes():
-    data = read_json(path)
+    data = j.read_json(path)
     attitudes = []
     for planet, race in data.items():
         for race, attitude in data[planet].items():
@@ -101,7 +101,7 @@ def view_all_attitudes():
         print(f" - {attitude}")
     return data, attitudes
 
-general_info()
+# general_info()
 # view_all_planets()
 # view_all_races()
 # view_all_attitudes()

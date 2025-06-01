@@ -4,6 +4,7 @@ from pathlib import Path
 root = Path("data")
 file = Path("database.json")
 path = root / file
+data = j.read_json(path)
 
 def add_planet_to_database():
     planet = input("Planet Name: ")
@@ -104,11 +105,11 @@ def add_species_to_database():
         print(f"{race} from {planet} added to database")
 
 
-entries = int(input("New entries: "))
-for i in range(entries):
+# entries = int(input("New entries: "))
+# for i in range(entries):
 #     add_planet_to_database()
 #     rename_planet()
-    edit_planet_info()
+#     edit_planet_info()
 #     del_planet_info()
 #     del_planet_from_database()
 #     add_species_to_database()
