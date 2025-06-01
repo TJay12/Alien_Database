@@ -9,19 +9,9 @@
             }
         },
         "size": "large",
-        "temperature": "temperate"
-    },
-    "Xenth": {
-        "species": {
-            "Ignari": {
-                "attitude": "hostile"
-            },
-            "Skarn": {
-                "attitude": "aggressive"
-            }
-        },
-        "size": "tiny",
-        "temperature": "hot"
+        "temperature": "temperate",
+        "weather": "cloudy",
+        "color": "greeny brown"
     },
     "Aurelia": {
         "species": {
@@ -33,7 +23,9 @@
             }
         },
         "size": "grand",
-        "temperature": "cold"
+        "temperature": "cold",
+        "weather": "foggy",
+        "color": "bluey purple"
     },
     "Pyros": {
         "species": {
@@ -48,7 +40,9 @@
             }
         },
         "size": "small",
-        "temperature": "burning hot"
+        "temperature": "burning hot",
+        "weather": "rainy",
+        "color": "orangey red"
     },
     "Frosk": {
         "species": {
@@ -60,7 +54,9 @@
             }
         },
         "size": "tiny",
-        "temperature": "frozen"
+        "temperature": "frozen",
+        "weather": "snowy",
+        "color": "bluey white"
     },
     "Zenari": {
         "species": {
@@ -75,6 +71,22 @@
             }
         },
         "size": "medium",
-        "temperature": "warm"
+        "temperature": "warm",
+        "weather": "cloudy",
+        "color": "greeny brown"
+    },
+    "Solinex": {
+        "species": {
+            "Ignari": {
+                "attitude": "hostile"
+            },
+            "Skarn": {
+                "attitude": "aggressive"
+            }
+        },
+        "size": "tiny",
+        "temperature": "hot",
+        "weather": "sunny",
+        "color": "orangey red"
     }
 }

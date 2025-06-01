@@ -1,10 +1,26 @@
+import JSON_util
 from JSON_util import read_json
 from pathlib import Path
+from Classes.Planet import Planet
 
 root = Path("data")
 file = Path("database.json")
 path = root / file
 
+def general_info():
+    data = JSON_util.read_json(path)
+
+    for planet in data:
+        planet_data = data[planet]
+        planet = Planet(
+            name=planet,
+            size=planet_data["size"],
+            color= planet_data["color"],
+            temperature=planet_data["temperature"],
+            species=planet_data["species"],
+            weather=planet_data["weather"]
+        )
+        planet.describe()
 
 # <--- Search all Items in a Specific Category --->
 # Search by Planet
@@ -13,11 +29,17 @@ def planet_search():
     planet = input("Enter Planet: ")
     if planet not in planets:
         print(f"{planet} not found")
+        return
     else:
-        print(f"Alien Races on Planet {planet}:")
-        for race, info in data[planet].items():
-            attitude = data[planet][race]["attitude"]
-            print(f" - {race} ({attitude})")
+        planet_data = data[planet]
+        planet = Planet(
+            name=planet,
+            size=planet_data["size"],
+            color=planet_data["color"],
+            temperature=planet_data["temperature"],
+            species=planet_data["species"]
+        )
+        planet.describe()
 
 # Search by Races
 def race_search():
@@ -79,7 +101,8 @@ def view_all_attitudes():
         print(f" - {attitude}")
     return data, attitudes
 
-view_all_planets()
+general_info()
+# view_all_planets()
 # view_all_races()
 # view_all_attitudes()
 # planet_search()
