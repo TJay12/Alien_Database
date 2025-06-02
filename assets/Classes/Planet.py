@@ -1,3 +1,6 @@
+from pydoc import describe
+
+
 class Planet:
     def __init__(self, name, size, color, temperature, weather, species):
         self.name = name
@@ -15,3 +18,12 @@ class Planet:
               f"Home to the:")
         for race, info in self.species.items():
             print(f" - {race} ({info['attitude']})")
+
+        output = ""
+        output += f"\n   {self.name}:\n"
+        output += f"   Seen from space {self.name} is a {self.size}, {self.color} planet, up close\n"
+        output += f"   it can bee seen as a {self.temperature} planet that's generally {self.weather}.\n"
+        output += f"   Home to the:\n"
+        for race, info in self.species.items():
+            output += f"    - {race} ({info['attitude']})\n"
+        return output

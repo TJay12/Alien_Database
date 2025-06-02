@@ -10,6 +10,8 @@ path = root / file
 def general_info(path):
     data = j.read_json(path)
 
+    output = ""
+
     for planet in data:
         planet_data = data[planet]
         planet = Planet(
@@ -20,7 +22,8 @@ def general_info(path):
             species=planet_data["species"],
             weather=planet_data["weather"]
         )
-        planet.describe()
+        output += planet.describe()
+    return output
 
 # <--- Search all Items in a Specific Category --->
 # Search by Planet
@@ -72,8 +75,7 @@ def view_all_planets():
     data = j.read_json(path)
     planets = []
     for planet in data:
-        if planet not in planets:
-            planets.append(planet)
+        planets.append(planet)
     for planet in planets:
         print(f" - {planet}")
     return data, planets
@@ -81,10 +83,10 @@ def view_all_planets():
 def view_all_races():
     data = j.read_json(path)
     races = []
-    for planet, race in data.items():
-        for race in data[planet]:
-            if race not in races:
-                races.append(race)
+    for planet, info in data.items():
+        for species, attitude in info["species"].items():
+            if species not in races:
+                races.append(species)
     for race in races:
         print(f" - {race}")
     return data, races
@@ -92,16 +94,16 @@ def view_all_races():
 def view_all_attitudes():
     data = j.read_json(path)
     attitudes = []
-    for planet, race in data.items():
-        for race, attitude in data[planet].items():
-            attitude = data[planet][race]["attitude"]
+    for planet, info in data.items():
+        for species, attributes in info["species"].items():
+            attitude = attributes["attitude"]
             if attitude not in attitudes:
                 attitudes.append(attitude)
     for attitude in attitudes:
         print(f" - {attitude}")
     return data, attitudes
 
-# general_info()
+# general_info(path)
 # view_all_planets()
 # view_all_races()
 # view_all_attitudes()
