@@ -7,7 +7,7 @@ def search_database():
     elif search_by == "a":
         attitude_search()
     elif search_by == "s":
-        race_search()
+        speci_search()
     else:
         print("Invalid Option")
 

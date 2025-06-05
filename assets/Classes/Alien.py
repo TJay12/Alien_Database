@@ -1,13 +1,18 @@
-class Alien:
-    def __init__(self, race, friendliness, planet, seen=False):
-        self.race = race
-        self.friendliness = friendliness
+class AlienSpecies:
+    def __init__(self, speci, planet, attitude, behaviour, texture, color, size):
+        self.speci = speci
         self.planet = planet
-        self.seen = seen
+        self.attitude = attitude
+        self.behaviour = behaviour
+        self.texture = texture
+        self.color = color
+        self.size = size
 
-    def mark_seen(self):
-        self.seen = True
-
-    def __str__(self):
-        status = "seen" if self.seen else "unseen"
-        return f"{self.race} ({self.friendliness}) from {self.planet} - {status}"
+    def describe(self):
+        output = ""
+        output += f"\n   {self.speci}:\n"
+        output += f"   The {self.speci} are a {self.size}, {self.color} species with\n"
+        output += f"   a {self.texture} outer.\n"
+        output += f"   Naturally {self.attitude} the {self.speci} found on {self.planet}\n"
+        output += f"   generally displays {self.behaviour} behaviours.\n"
+        return output

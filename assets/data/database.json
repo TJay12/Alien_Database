@@ -2,10 +2,18 @@
     "Xenith Prime": {
         "species": {
             "Gralnox": {
-                "attitude": "hostile"
+                "attitude": "negative",
+                "behaviour": "criticizing",
+                "texture": "ridged",
+                "color": "red",
+                "size": "massive"
             },
             "Zenthari": {
-                "attitude": "friendly"
+                "attitude": "positive",
+                "behaviour": "optimistic",
+                "texture": "ridged",
+                "color": "purple",
+                "size": "tall"
             }
         },
         "size": "large",
@@ -16,10 +24,18 @@
     "Aurelia": {
         "species": {
             "Quarn": {
-                "attitude": "neutral"
+                "attitude": "neutral",
+                "behaviour": "indifferent",
+                "texture": "hard",
+                "color": "grey",
+                "size": "tiny"
             },
             "Limari": {
-                "attitude": "friendly"
+                "attitude": "positive",
+                "behaviour": "optimistic",
+                "texture": "soft",
+                "color": "yellow",
+                "size": "tiny"
             }
         },
         "size": "grand",
@@ -30,13 +46,25 @@
     "Pyros": {
         "species": {
             "Emberak": {
-                "attitude": "friendly"
+                "attitude": "positive",
+                "behaviour": "optimistic",
+                "texture": "soft",
+                "color": "grey",
+                "size": "massive"
             },
             "Schorchin": {
-                "attitude": "aggressive"
+                "attitude": "aggressive",
+                "behaviour": "confrontational",
+                "texture": "ridged",
+                "color": "pink",
+                "size": "medium"
             },
             "Blazion": {
-                "attitude": "hostile"
+                "attitude": "negative",
+                "behaviour": "pessimistic",
+                "texture": "hard",
+                "color": "pink",
+                "size": "short"
             }
         },
         "size": "small",
@@ -47,10 +75,18 @@
     "Frosk": {
         "species": {
             "Rimeclaw": {
-                "attitude": "hostile"
+                "attitude": "negative",
+                "behaviour": "pessimistic",
+                "texture": "smooth",
+                "color": "grey",
+                "size": "massive"
             },
             "Chillix": {
-                "attitude": "friendly"
+                "attitude": "positive",
+                "behaviour": "optimistic",
+                "texture": "ridged",
+                "color": "purple",
+                "size": "medium"
             }
         },
         "size": "tiny",
@@ -61,13 +97,25 @@
     "Zenari": {
         "species": {
             "Krayt": {
-                "attitude": "hostile"
+                "attitude": "negative",
+                "behaviour": "pessimistic",
+                "texture": "ridged",
+                "color": "purple",
+                "size": "short"
             },
             "Velvon": {
-                "attitude": "neutral"
+                "attitude": "neutral",
+                "behaviour": "unemotional",
+                "texture": "rough",
+                "color": "pink",
+                "size": "medium"
             },
             "Tharnak": {
-                "attitude": "neutral"
+                "attitude": "neutral",
+                "behaviour": "indifferent",
+                "texture": "smooth",
+                "color": "orange",
+                "size": "tiny"
             }
         },
         "size": "medium",
@@ -78,10 +126,18 @@
     "Solinex": {
         "species": {
             "Ignari": {
-                "attitude": "hostile"
+                "attitude": "negative",
+                "behaviour": "pessimistic",
+                "texture": "soft",
+                "color": "white",
+                "size": "tiny"
             },
             "Skarn": {
-                "attitude": "aggressive"
+                "attitude": "aggressive",
+                "behaviour": "confrontational",
+                "texture": "rough",
+                "color": "pink",
+                "size": "tall"
             }
         },
         "size": "tiny",

@@ -1,10 +1,78 @@
 import JSON_util as j
 from pathlib import Path
+import random
 
 root = Path("data")
 file = Path("database.json")
 path = root / file
-data = j.read_json(path)
+
+attitudes = ["positive", "negative", "neutral", "proactive", "reactive",
+             "assertive", "aggressive", "empathic", "egocentric", "distrustful"]
+
+attutude_behaviors = {
+    "positive": {
+        "optimistic",
+        "constructive"
+    },
+    "negative": {
+        "pessimistic",
+        "complainer",
+        "criticizing",
+    },
+    "neutral": {
+        "indifferent",
+        "unemotional"
+    },
+    "proactive": {
+        "motivated",
+        "responsible",
+        "initiative"
+    },
+    "reactive": {
+        "overwhelmed",
+        "passive"
+    },
+    "assertive": {
+        "communicative",
+        "expressive"
+        "respectful"
+    },
+    "aggressive": {
+        "hostile",
+        "imposing",
+        "confrontational"
+    },
+    "empathic": {
+        "sensitive",
+        "understanding",
+        "compassionate"
+    },
+    "egocentric": {
+        "selfish",
+        "self-centered"
+    },
+    "distrustful": {
+        "skeptical",
+        "suspicious",
+        "distant"
+    },
+}
+
+textures = ["smooth", "ridged", "soft", "rough", "hard"]
+colors = ["black", "grey", "white", "brown", "red", "orange", "yellow", "green", "blue",
+         "purple", "pink"]
+sizes = ["massive", "tall", "average", "short", "tiny"]
+
+def rand_behaviour():
+    attitude = random.choice(attitudes)
+    behaviour = random.choice(list(attutude_behaviors[attitude]))
+    return attitude, behaviour
+
+def rand_appearance():
+    tex = random.choice(textures)
+    color = random.choice(colors)
+    size = random.choice(sizes)
+    return tex, color, size
 
 def add_planet_to_database():
     planet = input("Planet Name: ")
@@ -92,17 +160,40 @@ def del_planet_from_database():
 def add_species_to_database():
     planet = input("Planet: ")
     race = input("Race: ")
-    friendliness = input("Attitude: ")
+    attitude, behaviour = rand_behaviour()
+    texture, color, size = rand_appearance()
 
     data = j.read_json(path)
     if planet not in data:
         data[planet] = {}
-        data[planet][race] = {"attitude": friendliness}
+        data[planet][race] = {"attitude": attitude,
+                              "behaviour": behaviour,
+                              "texture": texture,
+                              "color": color,
+                              "size": size}
     elif race in data[planet]:
         print("Race already recorded on this planet")
     else:
-        data[planet][race] = {"attitude": friendliness}
+        data[planet][race] = {"attitude": attitude,
+                              "behaviour": behaviour,
+                              "texture": texture,
+                              "color": color,
+                              "size": size
+                              }
         print(f"{race} from {planet} added to database")
+
+def add_attributes_species_info():
+    data = j.read_json(path)
+    for planet, info in data.items():
+        species = data[planet]["species"]
+        for speci, attrib in species.items():
+            attitude = species[speci]["attitude"]
+            species[speci]["behaviour"] = random.choice(list(attutude_behaviors[attitude]))
+            texture, color, size = rand_appearance()
+            species[speci]["texture"] = texture
+            species[speci]["color"] = color
+            species[speci]["size"] = size
+    j.save_json(path, data)
 
 
 # entries = int(input("New entries: "))
@@ -113,3 +204,6 @@ def add_species_to_database():
 #     del_planet_info()
 #     del_planet_from_database()
 #     add_species_to_database()
+# rand_behaviour()
+# rand_appearance()
+# add_attributes_species_info()

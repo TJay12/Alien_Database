@@ -1,0 +1,68 @@
+{
+    "Xenith Prime": {
+        "species": {
+            "Gralnox": {
+                "attitude": "hostile"
+            },
+            "Zenthari": {
+                "attitude": "friendly"
+            }
+        }
+    },
+    "Xenth": {
+        "species": {
+            "Ignari": {
+                "attitude": "hostile"
+            },
+            "Skarn": {
+                "attitude": "aggressive"
+            }
+        }
+    },
+    "Aurelia": {
+        "species": {
+            "Quarn": {
+                "attitude": "neutral"
+            },
+            "Limari": {
+                "attitude": "friendly"
+            }
+        }
+    },
+    "Pyros": {
+        "species": {
+            "Emberak": {
+                "attitude": "friendly"
+            },
+            "Schorchin": {
+                "attitude": "aggressive"
+            },
+            "Blazion": {
+                "attitude": "hostile"
+            }
+        }
+    },
+    "Frosk": {
+        "species": {
+            "Rimeclaw": {
+                "attitude": "hostile"
+            },
+            "Chillix": {
+                "attitude": "friendly"
+            }
+        }
+    },
+    "Zenari": {
+        "species": {
+            "Krayt": {
+                "attitude": "hostile"
+            },
+            "Velvon": {
+                "attitude": "neutral"
+            },
+            "Tharnak": {
+                "attitude": "neutral"
+            }
+        }
+    }
+}

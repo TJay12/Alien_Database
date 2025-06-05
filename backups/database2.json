@@ -1,0 +1,92 @@
+{
+    "Xenith Prime": {
+        "species": {
+            "Gralnox": {
+                "attitude": "negative"
+            },
+            "Zenthari": {
+                "attitude": "positive"
+            }
+        },
+        "size": "large",
+        "temperature": "temperate",
+        "weather": "cloudy",
+        "color": "greeny brown"
+    },
+    "Aurelia": {
+        "species": {
+            "Quarn": {
+                "attitude": "neutral"
+            },
+            "Limari": {
+                "attitude": "positive"
+            }
+        },
+        "size": "grand",
+        "temperature": "cold",
+        "weather": "foggy",
+        "color": "bluey purple"
+    },
+    "Pyros": {
+        "species": {
+            "Emberak": {
+                "attitude": "positive"
+            },
+            "Schorchin": {
+                "attitude": "aggressive"
+            },
+            "Blazion": {
+                "attitude": "negative"
+            }
+        },
+        "size": "small",
+        "temperature": "burning hot",
+        "weather": "rainy",
+        "color": "orangey red"
+    },
+    "Frosk": {
+        "species": {
+            "Rimeclaw": {
+                "attitude": "negative"
+            },
+            "Chillix": {
+                "attitude": "positive"
+            }
+        },
+        "size": "tiny",
+        "temperature": "frozen",
+        "weather": "snowy",
+        "color": "bluey white"
+    },
+    "Zenari": {
+        "species": {
+            "Krayt": {
+                "attitude": "negative"
+            },
+            "Velvon": {
+                "attitude": "neutral"
+            },
+            "Tharnak": {
+                "attitude": "neutral"
+            }
+        },
+        "size": "medium",
+        "temperature": "warm",
+        "weather": "cloudy",
+        "color": "greeny brown"
+    },
+    "Solinex": {
+        "species": {
+            "Ignari": {
+                "attitude": "negative"
+            },
+            "Skarn": {
+                "attitude": "aggressive"
+            }
+        },
+        "size": "tiny",
+        "temperature": "hot",
+        "weather": "sunny",
+        "color": "orangey red"
+    }
+}
