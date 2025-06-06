@@ -5,8 +5,21 @@ from assets.Classes.Alien import AlienSpecies
 from assets.Classes.Attitude import Attitude
 
 root = Path("data")
-file = Path("database.json")
-path = root / file
+database_file = Path("database.json")
+database_path = root / database_file
+attribute_file = Path("speci_attributes.json")
+attribute_path = root / attribute_file
+
+# <--- Galaxy Info ---> (to be changed and class-ified later)
+def general_info():
+    data, species = view_all_species()
+    data, planets = view_all_planets()
+    galaxy = "Galitor"
+    species_num = len(species)
+    planets_num = len(planets)
+    output = (f"    Welcome to {galaxy}! \n    This galaxy is home to {species_num} different "
+              f"species across {planets_num} unique planets.")
+    return output
 
 # <--- View Info on Specific Categories --->
 # Planet Info
@@ -47,21 +60,28 @@ def species_info():
                 output += speci.describe()
     return output
 
-# Species Info
+# Attitude Info
 def attitude_info():
     data, attitude_list = view_all_attitudes()
+    attribute_data = j.read_json(attribute_path)
     output = ""
-    for attitude_item in attitude_list:
-        for planet, info in data.items():
-            for speci in data[planet]['species']:
-                if attitude_item in data[planet]['species'][speci]['attitude']:
-                    attitude = Attitude(
-                        attitude= data[planet]['species'][speci]['attitude'],
-                        behavior= data[planet]['species'][speci]['behaviour']
-                    )
-                    output += attitude.describe()
+    for num in range(len(attitude_list)):
+        attitude = attitude_list[num]
+        behaviour = attribute_data['attitude_behaviors'][attitude]
+        behav1 = behaviour[0]
+        behav2 = behaviour[1]
+        if len(behaviour) == 3:
+            behav3 = behaviour[2]
+        else:
+            behav3 = ""
+        attitude = Attitude(
+            attitude=attitude,
+            behavior1=behav1,
+            behavior2=behav2,
+            behavior3=behav3
+        )
+        output += attitude.describe()
     return output
-
 
 # <--- Search all Items in a Specific Category --->
 # Search by Planet
@@ -95,10 +115,9 @@ def speci_search():
                     attitude = data[planet][race]["attitude"]
         print(f"{input_race} is from {planet} ({attitude})")
 
-
 # <--- View all Items of a Specific Category --->
 def view_all_planets():
-    data = j.read_json(path)
+    data = j.read_json(database_path)
     planets = []
     for planet in data:
         planets.append(planet)
@@ -106,7 +125,7 @@ def view_all_planets():
     return data, planets
 
 def view_all_species():
-    data = j.read_json(path)
+    data = j.read_json(database_path)
     species_list = []
     for planet, info in data.items():
         for speci, attitude in info["species"].items():
@@ -116,7 +135,7 @@ def view_all_species():
     return data, species_list
 
 def view_all_attitudes():
-    data = j.read_json(path)
+    data = j.read_json(database_path)
     attitudes_list = []
     for planet, info in data.items():
         for species, attributes in info["species"].items():
@@ -126,9 +145,10 @@ def view_all_attitudes():
     attitudes_list.sort()
     return data, attitudes_list
 
+general_info()
 # planet_info()
 # species_info()
-attitude_info()
+# attitude_info()
 # view_all_planets()
 # view_all_species()
 # view_all_attitudes()

@@ -1,6 +1,6 @@
 # Display info in a window instead of console
 import tkinter as tk
-from assets.alien_search import (planet_info, species_info, attitude_info,
+from assets.alien_search import (general_info, planet_info, species_info, attitude_info,
                                  view_all_planets, view_all_species, view_all_attitudes)
 
 # <--- Button Handling 'List All' Display Functions --->
@@ -34,7 +34,7 @@ def handle_display_all_attitudes():
 # <--- Button Handling 'View Info' Display Functions --->
 def handle_view_general_info():
     info.delete("1.0", tk.END)
-    info_text = "Welcome"
+    info_text = general_info()
     info.insert(tk.END, info_text)
 
 def handle_view_planets_info():
@@ -54,9 +54,9 @@ def handle_view_behaviours_info():
 
 # <--- Main Window --->
 main = tk.Tk()
-main.title("Information")
+main.title("Alien Database and Information")
 main.configure(bg="pale green")
-main.geometry("800x900")
+main.geometry("800x1000")
 main.columnconfigure(0, weight=1)
 main.columnconfigure(1, weight=1)
 main.columnconfigure(2, weight=1)
@@ -64,7 +64,7 @@ main.columnconfigure(2, weight=1)
 # <--- Title Label --->
 title = tk.Label(main, text="Alien Database", font=("Uncial Antiqua", 40, "bold"),
                  fg="dark blue", bg="#c6b7fe")
-title.grid(row=0, columnspan=3, pady=20, ipadx=200, ipady=50)
+title.grid(row=0, columnspan=3, pady=20, ipadx=200, ipady=25)
 
 # <--- Buttons --->
 # General Info

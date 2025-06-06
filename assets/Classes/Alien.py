@@ -12,7 +12,7 @@ class AlienSpecies:
         output = ""
         output += f"\n   {self.speci}:\n"
         output += f"   The {self.speci} are a {self.size}, {self.color} species with\n"
-        output += f"   a {self.texture} outer.\n"
+        output += f"   a {self.texture} exterior.\n"
         output += f"   Naturally {self.attitude} the {self.speci} found on {self.planet}\n"
-        output += f"   generally displays {self.behaviour} behaviours.\n"
+        output += f"   primarily displays {self.behaviour} behaviours.\n"
         return output

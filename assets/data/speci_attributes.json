@@ -1,0 +1,73 @@
+{
+    "attitudes": [
+      "positive",
+      "negative",
+      "neutral",
+      "proactive",
+      "reactive",
+      "assertive",
+      "aggressive",
+      "empathic",
+      "egocentric",
+      "distrustful"
+    ],
+
+    "attitude_behaviors": {
+        "positive": [
+          "optimistic",
+          "constructive"
+        ],
+
+        "negative": [
+          "pessimistic",
+          "complainer",
+          "criticizing"
+        ],
+
+        "neutral": [
+          "indifferent",
+          "unemotional"
+        ],
+
+        "proactive": [
+          "motivated",
+          "responsible",
+          "initiative"
+        ],
+
+        "reactive": [
+          "overwhelmed",
+          "passive"
+        ],
+
+        "assertive": [
+          "communicative",
+          "expressive",
+          "respectful"
+        ],
+
+        "aggressive": [
+          "hostile",
+          "imposing",
+          "confrontational"
+        ],
+
+        "empathic": [
+          "sensitive",
+          "understanding",
+          "compassionate"
+        ],
+
+        "egocentric": [
+          "selfish",
+          "self-centered"
+        ],
+
+        "distrustful": [
+          "skeptical",
+          "suspicious",
+          "distant"
+        ]
+
+    }
+}

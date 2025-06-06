@@ -14,6 +14,20 @@
                 "texture": "ridged",
                 "color": "purple",
                 "size": "tall"
+            },
+            "Aueish": {
+                "attitude": "aggressive",
+                "behaviour": "hostile",
+                "texture": "hard",
+                "color": "black",
+                "size": "short"
+            },
+            "Beeuoeeee": {
+                "attitude": "positive",
+                "behaviour": "optimistic",
+                "texture": "ridged",
+                "color": "green",
+                "size": "medium"
             }
         },
         "size": "large",
@@ -36,6 +50,20 @@
                 "texture": "soft",
                 "color": "yellow",
                 "size": "tiny"
+            },
+            "Feosneid": {
+                "attitude": "neutral",
+                "behaviour": "unemotional",
+                "texture": "ridged",
+                "color": "black",
+                "size": "medium"
+            },
+            "Jgvth": {
+                "attitude": "neutral",
+                "behaviour": "unemotional",
+                "texture": "hard",
+                "color": "brown",
+                "size": "tall"
             }
         },
         "size": "grand",
@@ -65,6 +93,34 @@
                 "texture": "hard",
                 "color": "pink",
                 "size": "short"
+            },
+            "Auechkbm": {
+                "attitude": "reactive",
+                "behaviour": "passive",
+                "texture": "soft",
+                "color": "pink",
+                "size": "short"
+            },
+            "Lkeisur": {
+                "attitude": "distrustful",
+                "behaviour": "distant",
+                "texture": "hard",
+                "color": "grey",
+                "size": "short"
+            },
+            "Shiomcae": {
+                "attitude": "aggressive",
+                "behaviour": "imposing",
+                "texture": "soft",
+                "color": "green",
+                "size": "short"
+            },
+            "Ueaui": {
+                "attitude": "assertive",
+                "behaviour": "communicative",
+                "texture": "rough",
+                "color": "orange",
+                "size": "medium"
             }
         },
         "size": "small",
@@ -87,6 +143,34 @@
                 "texture": "ridged",
                 "color": "purple",
                 "size": "medium"
+            },
+            "Ooewglx": {
+                "attitude": "positive",
+                "behaviour": "optimistic",
+                "texture": "ridged",
+                "color": "white",
+                "size": "medium"
+            },
+            "Gaeweax": {
+                "attitude": "positive",
+                "behaviour": "constructive",
+                "texture": "rough",
+                "color": "grey",
+                "size": "massive"
+            },
+            "Eeoequ": {
+                "attitude": "assertive",
+                "behaviour": "expressiverespectful",
+                "texture": "hard",
+                "color": "yellow",
+                "size": "medium"
+            },
+            "Cweeooe": {
+                "attitude": "neutral",
+                "behaviour": "unemotional",
+                "texture": "smooth",
+                "color": "purple",
+                "size": "massive"
             }
         },
         "size": "tiny",
@@ -116,6 +200,41 @@
                 "texture": "smooth",
                 "color": "orange",
                 "size": "tiny"
+            },
+            "Taeobty": {
+                "attitude": "distrustful",
+                "behaviour": "skeptical",
+                "texture": "rough",
+                "color": "blue",
+                "size": "short"
+            },
+            "Pooi": {
+                "attitude": "positive",
+                "behaviour": "constructive",
+                "texture": "rough",
+                "color": "pink",
+                "size": "tall"
+            },
+            "Eecqu": {
+                "attitude": "assertive",
+                "behaviour": "communicative",
+                "texture": "ridged",
+                "color": "purple",
+                "size": "short"
+            },
+            "Eaiqukeoeo": {
+                "attitude": "reactive",
+                "behaviour": "overwhelmed",
+                "texture": "rough",
+                "color": "purple",
+                "size": "short"
+            },
+            "Uunei": {
+                "attitude": "negative",
+                "behaviour": "criticizing",
+                "texture": "soft",
+                "color": "pink",
+                "size": "tiny"
             }
         },
         "size": "medium",
@@ -138,6 +257,55 @@
                 "texture": "rough",
                 "color": "pink",
                 "size": "tall"
+            },
+            "Iechiqe": {
+                "attitude": "positive",
+                "behaviour": "optimistic",
+                "texture": "soft",
+                "color": "purple",
+                "size": "medium"
+            },
+            "Eefia": {
+                "attitude": "aggressive",
+                "behaviour": "confrontational",
+                "texture": "smooth",
+                "color": "pink",
+                "size": "medium"
+            },
+            "Akeozohoe": {
+                "attitude": "neutral",
+                "behaviour": "indifferent",
+                "texture": "hard",
+                "color": "grey",
+                "size": "massive"
+            },
+            "Xeokchx": {
+                "attitude": "egocentric",
+                "behaviour": "self-centered",
+                "texture": "hard",
+                "color": "red",
+                "size": "tiny"
+            },
+            "Uyvbe": {
+                "attitude": "neutral",
+                "behaviour": "unemotional",
+                "texture": "ridged",
+                "color": "blue",
+                "size": "medium"
+            },
+            "Dse": {
+                "attitude": "aggressive",
+                "behaviour": "confrontational",
+                "texture": "smooth",
+                "color": "blue",
+                "size": "tall"
+            },
+            "Kgeod": {
+                "attitude": "aggressive",
+                "behaviour": "confrontational",
+                "texture": "soft",
+                "color": "green",
+                "size": "tiny"
             }
         },
         "size": "tiny",
